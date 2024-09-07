@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G1DO</title>
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script defer src="main.js"></script></head>
+<body>
+    <div class="menu">
+        <h1>G1DO</h1>
+        <div class="project-header">
+            <div class="project-default">
+                <h2>My Projects</h2>
+                <button class="add-project">Add</button>
+            </div>
+            <div class="project-add hidden">
+                <input type="text" id="project-name" placeholder="Project Title...">
+                <button class="create">Create</button>
+            </div>
+        </div>
+        <hr>
+        <div class="project-container">
+            <!-- <div class="project">
+                <button class="project-select"></button>
+                <h3>Project Name</h3>
+                <button class="add-project">X</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="form-container">
+        <form class="form">
+            <div class="form-element">
+                <input id="title" type="text" placeholder="Title...">
+            </div>
+            <div class="form-element">
+                <label for="description">Description</label>
+                <div class="description-border">
+                    <textarea name="description" id="description" placeholder="Enter your description..."></textarea>
+                </div>
+            </div>
+            <div class="form-element">
+                <label for="date">Due Date</label> 
+                <input id="date" name="date" type="date">
+            </div>
+            <div class="form-element">
+                <div class="notes-border">
+                    <label for="notes">Notes</label>
+                    <textarea name="notes" id="notes"></textarea>
+                </div>
+            </div>
+            <div class="form-element form-buttons">
+                <button class="cancel">Cancel</button>
+                <button class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="todo-expanded hidden">
+        <button class="todo-expanded-close"></button>
+        <div class="window">
+            <div class="window-section">
+                <h2 class="window-title">Form Item</h2>
+                <button class="window-close">X</button>
+            </div>
+            <div class="window-section">
+                <h3>Description</h3>
+                <div class="window-description-border">
+                    <p class="window-description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit magnam accusamus voluptas nihil placeat aperiam.</p>
+                </div>
+            </div>
+            <div class="window-section">
+                <h3>Due Date</h3>
+                <p class="window-due-text">May 20, 2024</p>
+            </div>
+            <div class="window-section">
+                <h3>Notes</h3>
+                <div class="window-notes-border">
+                    <p class="window-notes-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, facere.
+                    </p>
+                </div>
+            </div>
+            <div class="window-section window-buttons">
+                <button class="edit">Edit</button>
+                <button class="remove">Remove</button>
+            </div>
+       </div>
+    </div>
+    <div class="content">
+        <h2 class="content-header">Project Title</h2>
+        <button class="add-todo">Add</button>
+        <div class="todo-container">
+            <!-- <div class="todo">
+                <button class="todo-selector"></button>
+                <button class="check"></button>
+                <div class="todo-content">
+                    <h3>Todo Item</h3>
+                    <p>Due Date</p>
+                </div>
+                <button class="delete">
+                    <p>x</p>
+                </button>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>
